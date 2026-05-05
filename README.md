@@ -15,9 +15,11 @@ Emergency distress signals (like SOS).
 Morse code represents each character using a unique combination of:
 Dots (·) → short signals
 Dashes (–) → longer signals
+
 Example:
 Letter
 Morse Code
+
 A
 · –
 
@@ -30,14 +32,19 @@ Space between letters = medium pause.
 Space between words = long pause.
 
  Examples of Words in Morse Code
+ 
 HELLO → ···· · ·–·· ·–·· –––
+
 CODE → –·–· ––– –·· ·
 
  Importance of Morse Code
+ 
 Even though it is not commonly used today, Morse code is still important because:
+
 It is simple and reliable
 It can be used in emergencies
 It requires minimal equipment
 
-#Reference
-Electronic Concept of Digital Robotics, google and meta.
+Reference
+
+Electronic Concept of Digital Robotics book, google and meta.
