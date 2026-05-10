@@ -48,3 +48,52 @@ It requires minimal equipment
 Reference
 
 Electronic Concept of Digital Robotics book, google and meta.
+
+ # Morse Code Translator
+
+This C++ program converts English text into Morse code.
+
+#include <iostream>;
+using namespace std;
+int main() {
+    string morse[26] = {
+        ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
+        "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.",
+        "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-",
+        "-.--", "--.."
+    };
+
+    string message;
+    string fullMessage = "";
+
+    cout << "Enter a message in English (A-Z characters only): ";
+    getline(cin, message);
+
+    cout << "\nOutput Morse code:\n";
+
+    for (int i = 0; i < message.length(); i++) {
+
+        char ch = toupper(message[i]);
+
+        
+        if (ch == ' ') {
+            fullMessage += "   ";
+            continue;
+        }
+
+        
+        if (ch >= 'A' && ch <= 'Z') {
+
+            string code = morse[ch - 'A'];
+
+            cout << ch << ": " << code << endl;
+
+            fullMessage += code + "   ";
+        }
+    }
+
+    cout << "\nFull Morse Code Message:\n";
+    cout << fullMessage << endl;
+
+    return 0;
+}
