@@ -51,9 +51,9 @@ Electronic Concept of Digital Robotics book, google and meta.
 
  # Morse Code Translator
 
-This C++ program converts English text into Morse code.
+This C++ program converts English text into Morse code using C++.
 
-#include <iostream>;
+#include <iostream>
 
 using namespace std;
 
@@ -99,3 +99,5 @@ int main() {
 
     return 0;
 }
+
+
